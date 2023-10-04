@@ -1,0 +1,114 @@
+.admin-sidebar{
+    background-color: dodgerblue;
+    border-radius: 10px;
+    height: 95vh;
+    margin-left: 20px;
+    margin-top: 2.5vh;
+    min-height: 870px;
+    min-width: 286px;
+    padding: 0 15px;
+    width: 286px;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+
+  
+
+}
+.admin-sidebar__image{
+    width: 200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.admin-sidebar__language{
+    width: 150px;
+    padding: 7px 0;
+   display: flex;
+   justify-content: center;
+   background-color: #fff;
+   margin: 20px auto;
+   border-radius: 5px;
+   .language{
+    margin: 0;
+    gap: 40px;
+   
+   }
+}
+.admin-sidebar__title{
+    display: flex;
+    gap: 10px;
+    width: 250px;
+    padding: 5px 0;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+
+    .admin-sidebar__icon{
+        padding: 10px;
+        background:linear-gradient(rgb(23, 22, 22),rgb(138, 135, 135));
+        border-radius: 50%;
+     
+
+        svg{
+            font-size: 40px;
+            color: #fff;
+        }
+    }
+    h3{
+         font-size: 18px;
+         font-weight: 500;
+         text-transform: uppercase;
+         height: 0;
+         margin-bottom: 25px;
+         color: #000;
+    }
+    p{
+          color: dodgerblue;
+          font-size: 15px;
+   
+    }
+}
+.admin-sidebar__menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    white-space: nowrap;
+    margin: 50px 0;
+    li{
+        font-weight: 600;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        svg{
+            font-size: 30px;
+        }
+    }
+    .admin-sidebar__create{
+       width: 250px;
+       padding:  15px 10px  ;
+       background-color: #fff;
+       color: dodgerblue;
+       border-radius: 5px;
+  
+    }
+}
+.admin-sidenar__exit{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 250px;
+    padding:  15px 10px  ;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;  
+    font-size: 20px;
+    font-weight: 600;
+    svg{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,45 @@
+.sub-nav{
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    height: 80px;
+    justify-content: flex-end;
+    padding: 0 100px;
+    width: 100%;
+   
+}
+.language{
+    display: flex;
+    gap: 20px;
+    margin-right: 40px;
+    img{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+}
+.sub-nav__contact{
+    display: flex;
+    align-items: center;
+    color: #4361ee;
+    font-size: 20px;
+    text-decoration: none;
+    gap: 40px;
+
+    a{
+    color: #4361ee;
+    font-size: 20px;
+    text-decoration: none;  
+    }
+}
+.sub-nav__phone{
+    display: flex;
+    align-items: center;
+}
+
+.sub-nav__email span{
+        display: flex;
+        align-items: center;  
+    }
+  
+

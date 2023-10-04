@@ -1,0 +1,21 @@
+.main-category__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    text-align: center;
+    h2{
+        width: 100%;
+        margin: 20px 80px 40px 0 ;
+        text-align: center;
+       
+       
+      
+        
+    }
+}
+.main-category__grid{
+    display: grid;
+    grid-template-columns: repeat(3,290px);
+    gap: 10px;
+}

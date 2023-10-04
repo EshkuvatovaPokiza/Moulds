@@ -1,0 +1,47 @@
+.admin-main{
+    width: 60%;
+    height: 100vh;
+  
+    margin-left: 350px;
+   
+ .admin-main__edit-btn{
+    padding: 10px 20px;
+    background-color: yellow;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    margin-left: 25px;
+ }
+ h1{
+    font-size: 40px;
+    font-weight: 800;
+ }
+}
+.admin-main__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+    input{
+        padding: 15px 0;
+        border-radius: 5px;
+        border: 1px solid dodgerblue;
+        text-indent: 10px;
+        font-size: 18px;
+     
+    }
+}
+.admin-product__quantity{
+    display: flex;
+    gap: 10px;
+}
+.admin-main__select{
+    display: flex;
+    gap: 20px;
+    select{
+        padding: 15px 15px;
+        border-radius: 5px;
+    }
+}
