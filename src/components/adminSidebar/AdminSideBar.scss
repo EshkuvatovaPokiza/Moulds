@@ -5,13 +5,22 @@
     margin-left: 20px;
     margin-top: 2.5vh;
     min-height: 870px;
-    min-width: 286px;
+    max-width: 286px;
     padding: 0 15px;
-    width: 286px;
-    position: absolute;
-    top: 0;
-    left: 0;
-   
+    width: 100%;
+  a{
+    text-decoration: none;
+
+    .active{
+        width: 100%;
+        padding:  15px 10px  ;
+        background-color: #fff;
+        color: dodgerblue;
+        border-radius: 5px;
+
+    }
+  }
+
 
   
 
@@ -77,25 +86,29 @@
     gap: 30px;
     white-space: nowrap;
     margin: 50px 0;
-    li{
+      li button{
         font-weight: 600;
         color: #fff;
         font-size: 20px;
         display: flex;
         align-items: center;
         gap: 10px;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+
+        &:hover{
+            width: 100%;
+            padding:  15px 10px  ;
+            background-color: #fff;
+            color: dodgerblue;
+            border-radius: 5px;
+        }
         svg{
             font-size: 30px;
         }
     }
-    .admin-sidebar__create{
-       width: 250px;
-       padding:  15px 10px  ;
-       background-color: #fff;
-       color: dodgerblue;
-       border-radius: 5px;
-  
-    }
+ 
 }
 .admin-sidenar__exit{
     display: flex;

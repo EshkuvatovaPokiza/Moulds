@@ -1,0 +1,54 @@
+.contact{
+    width: 100%;
+    font-size: 18px;
+    margin: 50px 0;
+ 
+
+     h1{
+        font-size: 40px;
+        margin: 20px 0;
+     }
+}
+.contact__phone ,.contact__email {
+    a{
+        display: flex;
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+        padding: 10px 0;
+        align-items: center;
+        gap: 10px;
+        
+      
+     }
+     svg{
+        font-size: 30px;
+        color: dodgerblue; 
+     }
+}
+.contact__loaction{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+    svg{
+        font-size: 30px;
+        color: dodgerblue;
+    }
+}
+.contact__follow{
+    font-weight: 600;
+}
+.contact-medias{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    svg{
+        color: dodgerblue;
+        font-size: 30px;
+    }
+   
+}

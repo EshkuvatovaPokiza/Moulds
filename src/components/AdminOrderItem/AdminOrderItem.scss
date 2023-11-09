@@ -1,0 +1,137 @@
+.orderitem__container{
+   overflow-y: auto;
+    width: calc(100% - 58px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+ 
+}
+
+.order-item__wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.24);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 20px auto;
+    max-height: 400px;
+    max-width: 400px;
+   padding: 20px;
+ 
+}
+.order-item__client{
+    display: flex;
+    gap: 4em;
+   
+}
+.order-item__upside{
+    display: flex;
+    gap: 10px;
+}
+.order-item__client-name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h1{
+        font-size: 20px;
+        margin: 0;
+        font-weight: 500;
+
+    }
+    h2{
+        font-size: 20px;
+        margin: 0;
+    }
+ 
+
+}
+.connect{
+    p{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        border-radius: 10px;
+        padding: 3px;
+      
+        }
+    .connected__status{
+        color: rgb(10, 182, 79);
+        background: rgba(199, 255, 185, 0.34);
+        border: 1px solid rgba(35, 213, 6, 0.39);
+    }
+    .not-connected__status{
+        color: rgba(185, 10, 10, 0.4);
+    background: rgba(248, 149, 128, 0.34);
+    border: 1px solid rgba(185, 10, 10, 0.4);
+    }
+}
+.order-item__icon{
+ 
+   width: 5em;
+   height: 5em;
+   display: grid;
+   place-items:center;
+   border-radius: 50%;
+   background:linear-gradient(rgb(23, 22, 22),rgb(138, 135, 135));
+  
+   svg{
+    color: #fff;
+    font-size: 30px;
+   }
+}
+.phone-icon{
+    width: 4em;
+    height: 4em;
+    display: grid;
+    place-items:center;
+    border-radius: 50%; 
+    background-color: rgb(12, 177, 12);
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+.order-item__sub{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.order-item__price{
+    display: flex;
+    gap: 10px;
+    span{
+        color: rgb(10, 182, 79);
+    }
+}
+.order-time{
+    span{
+        color: rgb(202, 202, 124);
+    }
+}
+.order-item__btns{
+    display: flex;
+    gap: 5px;
+    button{
+        padding: 5px 13px;
+        border-radius: 3px;
+        border: none;
+       font-size: 16px;
+       color: #fff;
+       white-space: nowrap;
+    }
+
+    .learn-more{
+        background-color: dodgerblue;
+    }
+    .connected{
+        background-color:  rgb(10, 182, 79);
+    }
+    .order-item__delete{
+        background-color: #eb4c4b;
+      
+    }
+}

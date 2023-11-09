@@ -12,6 +12,7 @@
     display: flex;
     gap: 20px;
     margin-right: 40px;
+    cursor: pointer;
     img{
         width: 40px;
         height: 40px;
@@ -35,11 +36,13 @@
 .sub-nav__phone{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-.sub-nav__email span{
+.sub-nav__email a{
         display: flex;
         align-items: center;  
+        gap: 10px;
     }
   
 

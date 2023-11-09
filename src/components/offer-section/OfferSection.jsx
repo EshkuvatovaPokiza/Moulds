@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 
 const OfferSection = () => {
   const location=useLocation();
-  const exceptionalRoutes=["/login","/admin"]
+  const exceptionalRoutes=["/login","/admin","/admin/create" , "/admin/orders/all", "/admin/orders/contacted", "/admin/orders/notcontacted" ,"/partners" ,"/aboutus", "/contact" ]
   const {t}=useTranslation()
   return !exceptionalRoutes.includes(location.pathname) ?  (
   

@@ -10,23 +10,22 @@ import { useSelector } from 'react-redux';
 
 
 const Aside = () => {
+   
+   const location=useLocation()
+   const [categoryItem,setcategoryItem]=useState({});
+   const {lang} =useSelector(state=>state.language);
+   const exceptionalRoutes =[`/productview/${location.pathname.split("/")[2]}`,"/login","/admin","/partners","/contact","/aboutus" ,"/admin/orders"]
 
 
-     let Product=useParams()
-     console.log(Product)
-    const location=useLocation()
-    const [categoryItem,setcategoryItem]=useState({});
-    const {lang} =useSelector(state=>state.language);
-    const exceptionalRoutes =[`/productview/`,"/login","/admin","/partners","/contact","/aboutus"]
+
     useEffect(()=>{
 instance("category/category-nest")
 .then(response=>setcategoryItem(response.data))
 .catch(err =>console.log(err)  )
 
     },[])
- 
   
-  return  !exceptionalRoutes.includes(location.pathname)? (
+  return  !exceptionalRoutes.includes(  location.pathname)?  (
        <div className='aside' >
         <p className="aside__item">  <FiGrid/>  Категория  </p>
         <ul className="aside__menu"  >
@@ -78,7 +77,7 @@ instance("category/category-nest")
 
 
     </div>
-  )
-:<></>}
+  ) : <></>
+}
 
 export default Aside;

@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 const Private = () => {
   const {token}=useSelector(state=>state.login)
- return token ?(
+ return token  ?  (
 <Outlet/>
   ):<Navigate to={"/login"}  />
 }

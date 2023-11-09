@@ -10,11 +10,11 @@ const Partners = () => {
   return (
    <Container>
      <div  className='partners'  >
-      <h1>Partners</h1>
+      <h1>{t("nav.partners")} </h1>
     <div className="partners__image">
     <img src={image} alt="" />
 
-<p>continue</p>
+     <p>{t("partners.continued")}</p>
 <Link  to={"/"}  > {t("nav.home")} </Link>
 
     </div>

@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 const Nav = () => {
   const location=useLocation()
-  const exceptionalRoutes =["/login","/admin"]
+  const exceptionalRoutes =["/login","/admin", "/admin/orders","/admin/create","/admin/create" , "/admin/orders/all", "/admin/orders/contacted", "/admin/orders/notcontacted"]
   const {t} =useTranslation()
   return !exceptionalRoutes.includes(location.pathname) ?(
 <Container>

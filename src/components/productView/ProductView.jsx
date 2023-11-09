@@ -11,6 +11,11 @@ import { useDispatch } from 'react-redux';
 
 
 const ProductView = () => {
+  // function useForce(){
+  //   const [value,setValue]=useState(0)
+  //   return ()=>setValue(value =>value +1)
+  // }
+  // const force =useForce()
   const {lang}=useSelector(state=>state.language);
   const {t}=useTranslation()
   let ProductId=useParams()
@@ -39,19 +44,19 @@ function increment(){
   }
  
 }
-function addToCart(productData){
-productData.count=productCount;
-productData.selectedSize=productData.productSizesAndQuantity[selectedVariant]
-productData.selectIndex=selectedVariant
- dispatch({product: productData,type:"ADD_TO_CART"})
- console.log(selectedVariant)
-}
+         function addToCart(productData,selectedVariant){
+         productData.count=productCount;
+         productData.selectedSize=selectedVariant
+         dispatch({ productData ,type:"ADD_TO_CART"});
+       
+    }
+  
 
 
 
 
 
-console.log(selectedVariant)
+
 
   return (
     <Container>
@@ -84,8 +89,11 @@ console.log(selectedVariant)
 <h3>
 {t("product-view.size")}
 <select value={selectedVariant} onChange={(e)=>{
+ 
     setSelectedVariant(+e.target.value)
     setProductCount(1)
+   
+  
     }}  >
 {
   productViewData?.productSizesAndQuantity.map((ProductViewSize ,ind)=>
@@ -125,7 +133,7 @@ console.log(selectedVariant)
 </div>
 
 <div>
-  <button className='product-view__btn' onClick={()=> addToCart(productViewData)}  > <FiShoppingCart/> {t("card.addtocart")}</button>
+  <button className='product-view__btn' onClick={()=> addToCart(productViewData,selectedVariant)}  > <FiShoppingCart/> {t("card.addtocart")}</button>
 </div>
 </div>
 

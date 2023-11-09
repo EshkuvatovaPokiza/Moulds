@@ -15,10 +15,12 @@ const ProductCard = ({productData}) => {
   const {lang}=useSelector(state=>state.language)
   const {t}=useTranslation()
 
-function addToCart(pData){
+function addToCart(productData){
+  
+  productData.count=1
+productData.selectedSize=0
 
-
-  dispatch({product: pData,type:"ADD_TO_CART"})
+  dispatch({product: productData,type:"ADD_TO_CART"})
 }
 
 

@@ -4,10 +4,9 @@ import { useEffect } from 'react';
 import { instance } from '../../api/axios';
 import { v4 as uuidv4 } from 'uuid';
 import ProductSlider from '../product-slider/ProductSlider';
-import ProductCard from '../product-card/ProductCard';
 import { Container } from '../../utils/utils';
 import "./main.scss"
-import Banner from '../banner/Banner';
+
 
 
 const Main = () => {

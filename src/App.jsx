@@ -19,6 +19,9 @@ import Login from './routes/Login/Login';
 import Admin from './routes/Admin/Admin';
 import { ToastContainer } from 'react-toastify';
 import Private from './routes/Private/Private';
+import Orders from './routes/Orders/Orders';
+import Create from './routes/create/Create';
+import OrderDetails from './routes/OrderDetails/OrderDetails';
 
 
 function App() {
@@ -41,7 +44,15 @@ function App() {
       <Route path='/subcategory/:subcategoryname' element={<SubCategory/>}  />
       <Route path='/login'   element={<Login/>}  />
       <Route path='/'  element={<Private/>} >
-        <Route   path='/admin'  element={<Admin/>} />
+        <Route   path='/admin'  element={<Admin/>} >
+            <Route    path='/admin/orders'    element={<Orders/>} >
+                <Route path='/admin/orders/:status'  element ={<OrderDetails/>} />
+                
+
+
+            </Route>
+            <Route    path='/admin/create'    element={<Create/>}  />
+        </Route>
       </Route>
   
 

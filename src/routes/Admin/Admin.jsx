@@ -1,13 +1,16 @@
 import React from 'react'
 import AdminSideBar from '../../components/adminSidebar/AdminSideBar'
-import AdminMain from '../../components/AdminMain/AdminMain'
 import "./Admin.scss"
+import { Outlet } from 'react-router-dom'
+import AdminProductDetails from '../../components/AdminProductDetails/AdminProductDetails'
 
 const Admin = () => {
   return (
     <div className='admin' >
-<AdminSideBar/>
-<AdminMain/>
+  <AdminSideBar/>
+<Outlet/>
+<AdminProductDetails/>
+
 
 
     </div>

@@ -17,6 +17,7 @@ const AdminSideBar = () => {
         i18n.changeLanguage(selectedLangCode)
        dispatch({language_code:selectedLangCode,type:"CHANGE_LANG"})
         }
+      
   return (
     <div className='admin-sidebar'  >
 <div className="admin-sidebar__image">
@@ -37,10 +38,10 @@ const AdminSideBar = () => {
 </div>
 
 <ul className="admin-sidebar__menu">
-<li> <FiShoppingCart/>  Заказы </li>
-<li> <FiMenu/>   Управление продуктом  </li>
-<li className='admin-sidebar__create'  > <FiPlus/> Создание продукта </li>
-<li> <IoAnalyticsOutline/> Аналитика </li>
+<li><Link to={"/admin/orders/all"} className=''> <button><FiShoppingCart/>  Заказы </button></Link></li>
+<li> <Link to={"/admin/manage"}   ><button><FiMenu/>   Управление продуктом </button></Link> </li>
+<li className='admin-sidebar__create'  ><Link to={"/admin/create"}  > <button> <FiPlus/> Создание продукта </button>  </Link></li>
+<li> <Link to={"/admin/analytics"}   ><button> <IoAnalyticsOutline/> Аналитика </button></Link></li>
 
 
 </ul>

@@ -9,7 +9,8 @@ import { toast} from "react-toastify";
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate ,Link} from 'react-router-dom';
+
 
 const Login = () => {
     const {lang}=useSelector(state=>state.language);
@@ -55,6 +56,7 @@ const Login = () => {
               <div className="password__wrapper">   <input type={isPasswordOpen===true? "text": "password"} value={loginData.password}  placeholder='Your password' required  onChange={(e)=>setLoginData({username:loginData.username,password:e.target.value})}  /> {isPasswordOpen===true ? <FiEye onClick={()=>setisPasswordOpen(false)}  />:<FiEyeOff onClick={()=>setisPasswordOpen(true)}  /> }</div>
                 <button type='submit' className='login-btn' disabled={isLoading?true:false} >{isLoading&&  <AiOutlineLoading className='loading-icon'   /> } {isLoading?"":"Login"}</button>
             </form>
+            <p><Link   to={"/"}  >  {t("nav.home")}  </Link>  </p>
         </div>
         <div className="login-image">
 
